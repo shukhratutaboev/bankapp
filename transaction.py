@@ -2,7 +2,7 @@ from abc import abstractmethod
 import uuid
 from datetime import datetime
 
-class Transactions:
+class Transaction:
     def __init__(self, accountId, amount: float, note: str, date: datetime) -> None:
         self.id = uuid.uuid4()
         self.accountId = accountId
